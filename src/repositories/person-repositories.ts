@@ -1,5 +1,5 @@
-import connection from "database/dataBase";
-import { person } from "protocols/person-protocols";
+import connection from "../database/dataBase";
+import { person } from "../protocols/person-protocols";
 
 export async function getRandomPerson() {
   const selectQuery = "SELECT * FROM people ORDER BY RANDOM() LIMIT 1";
